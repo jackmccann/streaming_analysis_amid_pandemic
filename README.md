@@ -1,46 +1,56 @@
-# streaming_analysis_amid_pandemic
+![# Streaming in a Pandemic](https://gdurl.com/fD4V)
 
-Capstone Proposal v2
 
-Question
-•	How has consumer content consumption changed since the pandemic?
-•	How are advertisers adapting to reach these consumers?
+This is an analysis of how Twitch.tv trends are changing. I was curious about how streaming behavior on Twitch was shifting since the coronavirus lockdown measures, as well as the business implications for influencer marketing. So, I made it my capstone project at Nashville Software School ([NSS](http://nashvillesoftwareschool.com/)).
 
-Motivation 
-•	The coronavirus has completely shifted the way the world consumes content and the ways businesses reach customer segments with content. Companies are scrambling to adapt. As I move back into the workforce it makes sense to be able to empower my future employer with that knowledge.
-•	I have significant experience at the intersection of content and marketing. Doubling down on the analytics of this subject was a primary motivation for taking this class. What better way to market my professional development than to connect the dots between my business experience and my newly acquired analytics skillsets.
-•	Consumer streaming preferences are accelerating. For example, Analysts predicted Netflix would globally gain about 7 million new subscribers over the entire 1st quarter of the year. They didn’t. They acquired 15.8 million in March alone.  Previously the highest customer acquisitions were only 9.6 million (Q1 2019). Meanwhile, Disney-owned ESPN saw a ratings drop of nearly 50% on some of their properties such as the Golf Channel. They’re hemorrhaging advertisers and revenue. Disney’s media empire is triaging assets. However, subscribers to their streaming platform, Disney + are up to 54 million in the first quarter, beating analyst predictions by around 20 mil. All that sounds great, but both companies face a boiling point. 
-•	Advertisers are adapting. It shouldn't be considered a “new” trend, but rather an acceleration of market forces that were already in play. It’s more accurate to illustrate that the pandemic has been a catalyst for trends already in motion. 
-•	It’s relevant to the industry I’ll go to work in shortly.
-•	It stimulates my intellectual curiosity
-•	I have accessible data on the subject to support analysis
 
+ The two primary business questions I focused my analysis on were: 
  
-Schedule (through 6/25/2020)
-•	Get the Data (6/3)
-•	Clean & Explore the Data (6/12)
-•	Create Presentation and Dashboard (6/17)
-•	Internal Demos (6/19)
-•	Demo Day (6/25)
+ 1. How are consumer streaming trends changing amid the coronavirus pandemic? 
+ 2. Based on those trends, how should content companies reach consumers?” 
+ 
+ 
+Below is an overview for how I approached the project, and a Tableau dashboard visualizing my findings. I've also included data and directions if you'd like to do your own analysis on these trends.
  
 
-Data Sources
-•	Statista
-•	Access: have
-•	Subjects: consumer media usage, streaming, etc
-•	Google Trends:
-•	Access: have
-•	Trending searches by country during pandemic, media types
-•	eMarketer
-•	Access: very likely
-•	Subjects: media, content marketing, advertising pandemic effects
-•	Status: in progress(access in progress)
-•	Neilsen 
-•	Access: unlikely
-•	Subjects: media usage, consumer behavior
-•	Status: reached out
+![Approach](https://gdurl.com/4pUA)
 
- 
-Known Issues and Challenges
-•	Time. 80% of this is going to be finding and cleaning the data. I’ve allocated most of my time and energy to this alone. For consistent execution I’m leveraging pomadoro method, agile scrum methodology, and Asana kanbans.
 
+## Process
+
+Findthe data, clean it, and do a thorough exploratory data analysis. I then extracted, transformed, and merged 106 datasets spanning 2016 - 2020 into one dataframe. The primary tools I used were Python, Jupyter Notebook, Excel, Tableau, and API data from Twitch.tv. Lastly, I used Tableau to create dashboards where my insights can be visualized. 
+
+## Dashboard
+
+[My Tableau Public profile](https://public.tableau.com/views/StreamingInAPandemic-TwitchAnalysis/AnalysisOverview?:language=en&:display_count=y&publish=yes&:origin=viz_share_link) includes some of the visualizations I made for this project, as well as Influencer Tool.
+
+It’s now open to the public for anyone to use for further analysis. If you'd like to do your own analysis from start to finish, follow these steps:
+
+## Data
+
+I titied up all the data I used into this cenral dataset. If you'd like to create your own analysis using it, the file is in the [data folder](https://github.com/jackmccann/streaming_analysis_amid_pandemic/tree/master/data) under:
+
+```
+tttcsv.csv
+```
+
+## Motivation
+
+I considered quite a few options for my capstone, but ultimately choosing this subject came down to following my own intellectual curiosity to solve a practical business need in influenecr marketing.
+
+![Motivation](https://gdurl.com/HwZtw)
+
+## Versioning
+
+This is the first version of the project. It utilizes datasets I cleaned up in Python using Jupyter Notebook. If you perform your own analysis, I recommend going with the Twitch.tv API to gather the latest endpoints as the data I have attached here is current to May 2020.
+
+Be sure to use the latest version of Twitch's API that which authenticates vias OAuth 2.0, then follow the documentation here: https://dev.twitch.tv/docs/insights/
+
+## Authors
+
+* **Jack McCann** ([LinkedIn](https://www.linkedin.com/in/jackmccannofficial/))
+
+
+## License
+
+This project is open to the public for individual analysis and project practice. If you do your own version, please let me know - I'd love to take a look!
